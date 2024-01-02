@@ -5,11 +5,25 @@ import Profile from "./components/common/Profile/Profile";
 function App() {
   return (
     <>
-      <div className="dark-purple-morphism">
+      <div className="area">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div className="h-96">
         <Navbar />
-        <div className="">
-          <Profile />
-        </div>
+      </div>
+      <div className="container">
+        <Profile />
       </div>
     </>
   );
