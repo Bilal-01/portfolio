@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
 
-interface ProjectCardProps {
+interface CardProps {
  children: ReactNode;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ children }) => {
+const Card: React.FC<CardProps> = ({ children }) => {
  return <div className="project-card">{children}</div>;
 };
 
-export default ProjectCard;
+export default Card;
