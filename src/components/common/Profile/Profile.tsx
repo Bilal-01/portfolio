@@ -7,11 +7,11 @@ const Profile = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   const sentences = isMobile
-    ? ["CS Undergrad", "Full Stack Developer", "Angular Intern"]
+    ? ["CS Undergrad", "Full Stack Developer", "Web3 Enthusiast"]
     : [
         "I am a CS Undergrad",
         "I am a Full Stack Developer",
-        "I am an Angular Intern",
+        "I am a Web3 Enthusiast",
       ];
 
   const typeWriterClass =
