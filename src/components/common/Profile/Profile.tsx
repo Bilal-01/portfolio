@@ -1,6 +1,47 @@
 import { useState, useEffect } from "react";
 import ProfileImage from "../../../assets/profile-cropped.png";
 
+interface SocialMediaLink {
+  icon: string;
+  link: string;
+}
+
+const SocialMediaLinks: React.FC = () => {
+  const mediaLinks: SocialMediaLink[] = [
+    {
+      icon: '<i class="fa-brands fa-github"></i>',
+      link: "https://github.com/Bilal-01",
+    },
+    {
+      icon: '<i class="fa-brands fa-twitter"></i>',
+      link: "https://twitter.com/Bilal_01",
+    },
+    {
+      icon: '<i class="fa-brands fa-linkedin"></i>',
+      link: "https://www.linkedin.com/in/bilal-01/",
+    },
+    {
+      icon: '<i class="fa-brands fa-medium"></i>',
+      link: "https://medium.com/@mbilalaziz.01",
+    },
+  ];
+
+  return (
+    <div className="flex space-x-3.5 md:space-x-6 lg:space-x-8 justify-end mt-8">
+      {mediaLinks.map((link, index) => (
+        <a
+          key={index}
+          href={link.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span dangerouslySetInnerHTML={{ __html: link.icon }} />
+        </a>
+      ))}
+    </div>
+  );
+};
+
 const Profile = () => {
   const [currentSentence, setCurrentSentence] = useState(0);
   const [collapseClass, setCollapseClass] = useState(" w-0");
@@ -50,20 +91,23 @@ const Profile = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative md:min-h-[256px] w-[90%] mx-auto">
       {!isMobile ? (
         <>
           <img
             src={ProfileImage}
             alt="hero"
-            className="object object-cover rounded-full border-4 border-[#8f94fb] bg-[#4e54c8] w-1/3"
+            className="absolute object object-cover rounded-full border-4 border-[#8f94fb] bg-[#4e54c8] w-1/3 z-10"
           />
-          <div className="absolute border-4 border-[#8f94fb] w-5/6 top-1/2 right-0 xl:min-h-48 lg:min-h-36 min-h-24 transform translate-y-[-50%] text-end -z-50 rounded-3xl lg:pr-12 lg:py-4 pr-8">
+          <div className="absolute border-4 border-[#8f94fb] w-5/6 top-1/2 right-0 xl:min-h-48 lg:min-h-36 min-h-24 transform translate-y-[-50%] text-end rounded-3xl lg:pr-12 lg:py-4 pr-8">
             <div className="flex flex-col justify-center h-full">
               <h2 className="text-3xl text-slate-100">Mohammad Bilal Aziz</h2>
               <div className="text-xl text-slate-300">
                 <div className={`${typeWriterClass}${collapseClass}`}>
                   {sentences[currentSentence]}
+                </div>
+                <div className="">
+                  <SocialMediaLinks />
                 </div>
               </div>
             </div>
@@ -82,6 +126,9 @@ const Profile = () => {
               <div className="text-xl text-slate-300">
                 <div className={`${typeWriterClass}${collapseClass}`}>
                   {sentences[currentSentence]}
+                </div>
+                <div className="w-full">
+                  <SocialMediaLinks />
                 </div>
               </div>
             </div>

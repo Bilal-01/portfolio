@@ -19,12 +19,12 @@ function App() {
           <li></li>
         </ul>
       </div>
-      <div className="h-96">
+      <div className="h-12">
         <Navbar />
       </div>
-      <div className="container">
+      {/* <div className="container">
         <Profile />
-      </div>
+      </div> */}
     </>
   );
 }

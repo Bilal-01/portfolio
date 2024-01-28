@@ -67,12 +67,6 @@ body{
     z-index: -100;
 }
 
-@media screen and (max-width: 1024px) {
-  .area{
-    height: 150vh;
-  }
-}
-
 .circles{
     position: absolute;
     top: 0;

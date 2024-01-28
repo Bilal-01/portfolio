@@ -1,11 +1,11 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode } from "react";
 
 interface CardProps {
- children: ReactNode;
+  children: ReactNode;
 }
 
 const Card: React.FC<CardProps> = ({ children }) => {
- return <div className="project-card">{children}</div>;
+  return <div className="border border-1">{children}</div>;
 };
 
 export default Card;
