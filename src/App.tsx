@@ -1,11 +1,12 @@
 import "./App.css";
-import Navbar from "./components/common/Navbar/Navbar";
-import Profile from "./components/common/Profile/Profile";
+import Navbar from "./components/core/Navbar/Navbar";
+import Experience from "./components/Experience/Experience";
+import Profile from "./components/Profile/Profile";
 
 function App() {
   return (
     <>
-      <div className="area">
+      <div className="area bg-dark">
         <ul className="circles">
           <li></li>
           <li></li>
@@ -16,15 +17,24 @@ function App() {
           <li></li>
           <li></li>
           <li></li>
-          <li></li>
+          <li></li> 
         </ul>
       </div>
-      <div className="h-12">
-        <Navbar />
+      <div className="container">
+        <div className="mb-[96px]">
+          <Navbar />
+        </div>
+        <section id="profile" className="section">
+          <div>
+            <Profile />
+          </div>
+        </section>
+        <section id="experience" className="section">
+          <div>
+            <Experience />
+          </div>
+        </section>
       </div>
-      {/* <div className="container">
-        <Profile />
-      </div> */}
     </>
   );
 }

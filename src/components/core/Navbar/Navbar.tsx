@@ -4,7 +4,7 @@ import { useState } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-[#4e54c8] dark:bg-gray-900 fixed w-full z-20 top-0 start-0 text-slate-300">
+    <nav className="bg-dark dark:bg-gray-900 fixed w-full z-20 top-0 start-0 text-slate-300 h-[96px]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="" className="flex items-center space-x-3 rtl:space-x-reverse">
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
