@@ -1,0 +1,38 @@
+.step {
+}
+
+.connector {
+  border: 1px solid #5e57ff;
+}
+
+.blue-shadow {
+  box-shadow: 0px 0px 10px 2px rgba(94, 87, 255, 0.75);
+}
+
+.vertical-stepper-divider{
+  width: 0px;
+  height: 356px;
+  border: 1px solid #5E57FF ;
+  opacity: 0.5;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  margin-top: 32px;
+  margin-left: 32px;
+  z-index: -1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity:  0;
+    visibility: hidden;
+  }
+  to {
+    opacity:  1;
+    visibility: visible;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn  1s ease-out forwards;
+}
