@@ -25,7 +25,7 @@ const StepperStep: FC<any> = ({ data, isLast }) => {
           <div className="vertical-stepper-divider blue-shadow"></div>
         )}
       </div>
-      <div className="connector blue-shadow lg:w-[256px] md:w-[196px] w-[128px] h-[0px]"></div>
+      <div className="connector blue-shadow lg:w-[172px] w-[128px] h-[0px]"></div>
       <div className="">
         <Card>
           <h1 className="text-3xl pt-2">{data.title}</h1>
