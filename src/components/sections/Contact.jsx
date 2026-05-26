@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Send, Mail, MapPin, Github, Linkedin, Threads, Twitter, MessageSquare, Loader2, Phone } from 'lucide-react';
+import { Send, Mail, MapPin, Github, Linkedin, Twitter, MessageSquare, Loader2, Phone } from 'lucide-react';
 import toast, { Toaster } from 'react-hot-toast';
 import SectionTitle from '../ui/SectionTitle.jsx';
 import { personal } from '../../data/index.js';

@@ -89,6 +89,7 @@ export default function Navbar({ activeSection }) {
           <div className="hidden md:flex items-center gap-3">
             <motion.a
               href={personal.resumeUrl}
+              download
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="flex items-center gap-2 px-4 py-2 rounded-xl bg-violet-600/90 hover:bg-violet-500 text-white text-sm font-semibold transition-colors shadow-[0_0_20px_rgba(139,92,246,0.3)]"
@@ -138,6 +139,7 @@ export default function Navbar({ activeSection }) {
               })}
               <a
                 href={personal.resumeUrl}
+                download
                 className="mt-2 flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-violet-600 text-white text-sm font-semibold"
               >
                 <Download size={14} /> Download Resume

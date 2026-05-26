@@ -25,7 +25,7 @@ export const personal = {
     twitter: 'https://www.threads.com/@bilal_aziz01',
     medium: 'https://medium.com/@mbilalaziz.01',
   },
-  resumeUrl: '#',
+  resumeUrl: '/MOHAMMAD_BILAL_AZIZ_RESUME.pdf',
 };
 
 export const stats = [
