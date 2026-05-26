@@ -92,16 +92,6 @@ function TiltCard({ project, index, onClick }) {
 
           {/* Footer */}
           <div className="flex items-center justify-between pt-3 border-t border-[var(--border)]">
-            <div className="flex items-center gap-4 text-xs text-[var(--text-muted)] font-mono">
-              <span className="flex items-center gap-1">
-                <Star size={11} className="text-amber-400" />
-                {project.stars.toLocaleString()}
-              </span>
-              <span className="flex items-center gap-1">
-                <GitFork size={11} />
-                {project.forks}
-              </span>
-            </div>
             <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
               <a href={project.github} target="_blank" rel="noopener noreferrer"
                 className="p-1.5 rounded-lg hover:bg-white/5 text-[var(--text-muted)] hover:text-white transition-colors">
