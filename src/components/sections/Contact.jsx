@@ -186,7 +186,7 @@ export default function Contact() {
                 </span>
               </div>
               <p className="text-[var(--text-muted)] text-sm">
-                Open to senior/staff roles in AI infrastructure, LLM systems, and applied ML.
+                Open to working student and internship opportunities in Machine Learning, AI Engineering or Software Engineering. Feel free to reach out for collaborations or just a chat!
               </p>
             </motion.div>
           </div>
